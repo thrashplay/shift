@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Nova Mono";
+  src: local("Nova Mono"), url("./NovaMono-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Xanh Mono";
+  src: local("Xanh Mono"), url("./XanhMono-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: local("VT323"), url("./VT323-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Nanum Gothic Coding";
+  src: local("Nanum Gothic Coding"), url("./NanumGothicCoding-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Cutive Mono";
+  src: local("Cutive Mono"), url("./CutiveMono-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
