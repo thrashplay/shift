@@ -1,3 +1,7 @@
 .canvas {
   flex: 1;
+  margin: 0;
+  /* disable scrolling, so that Pixi doesn't "resizeTo' include the scrollbars */
+  overflow: hidden;
+  padding: 0;
 }
