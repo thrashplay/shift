@@ -31,15 +31,13 @@ module.exports = {
   packagerConfig: {},
   plugins: [
     ['@electron-forge/plugin-webpack', {
-      // allow source maps
-      devContentSecurityPolicy:
-        'default-src \'self\' \'unsafe-inline\' data:; script-src \'self\' \'unsafe-eval\' \'unsafe-inline\' data:',
+      devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data:; script-src 'self' 'unsafe-eval' 'unsafe-inline' data:`,
       mainConfig: './.electron/webpack.main.config.js',
       renderer: {
         config: './.electron/webpack.renderer.config.js',
         entryPoints: [{
           html: './src/html/index.html',
-          js: './src/renderer.ts',
+          js: './src/renderer.tsx',
           name: 'main_window',
           preload: {
             js: './src/preload.ts',
