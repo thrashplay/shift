@@ -1,0 +1,57 @@
+{
+  "name": "shift-chronicle",
+  "version": "0.0.1",
+  "description": "'Chronicle' iteration of the Shift project. A Thrashplay game.",
+  "license": "ISC",
+  "main": "./.webpack/main",
+  "scripts": {
+    "clean": "rm -rf lib out",
+    "lint": "run-p 'lint:*'",
+    "lint:packageJson": "npmPkgJsonLint --ignorePath .gitignore .",
+    "lint:src": "eslint --cache --fix --ignore-path .gitignore --report-unused-disable-directives --ext '.ts,.js,.tsx,.jsx,.json' .",
+    "make": "electron-forge make",
+    "package": "electron-forge package",
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
+    "@electron-forge/plugin-webpack": "^6.0.0-beta.64",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.0",
+    "css-loader": "^6.0.0",
+    "electron": "^19.0.8",
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.1",
+    "node-loader": "^2.0.0",
+    "npm-package-json-lint": "^5.4.0",
+    "npm-run-all": "^4.1.5",
+    "style-loader": "^3.0.0",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.5.4"
+  },
+  "author": "Sean Kleinjung <sean@thrashplay.com>",
+  "bugs": {
+    "url": "https://github.com/thrashplay/shift/issues"
+  },
+  "config": {
+    "forge": ".electron/forge.config.js"
+  },
+  "homepage": "https://github.com/thrashplay/shift#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrashplay/shift.git"
+  }
+}
