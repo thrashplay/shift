@@ -44,8 +44,9 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
-# TypeScript cache
+# TypeScript cache and outputs
 *.tsbuildinfo
+lib
 
 # Optional npm cache directory
 .npm
@@ -102,3 +103,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# electron-forge build outputs
+out
+.webpack
