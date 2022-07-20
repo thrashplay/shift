@@ -1,6 +1,6 @@
 {
   "rules": {
-    "prefer-alphabetical-scripts": "error",
+    "prefer-alphabetical-scripts": "off",
     "prefer-property-order": ["error", [
       "name",
       "version",

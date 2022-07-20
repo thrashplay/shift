@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./packages/**/src"
+  ],
+  "references": [
+    {
+      "path": "./packages/paragon/core"
+    },
+    {
+      "path": "./packages/paragon/pgn"
+    },
+    {
+      "path": "./packages/shift/core"
+    }
+  ]
+}
