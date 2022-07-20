@@ -1,0 +1,40 @@
+{
+  "name": "@thrashplay/shift-core",
+  "version": "0.0.1",
+  "description": "'Chronicle' iteration of the Shift project. A Thrashplay game.",
+  "license": "ISC",
+  "main": "./.webpack/main",
+  "scripts": {
+    "build": "tsc",
+    "dev": "paragon-dev serve",
+    "dist": "paragon-dev build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@thrashplay/paragon": "*",
+    "fontfaceobserver": "^2.3.0",
+    "lodash": "^4.17.21",
+    "pixi.js": "^6.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@thrashplay/paragon-cli": "*",
+    "@types/fontfaceobserver": "^2.1.0",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6"
+  },
+  "author": "Sean Kleinjung <sean@thrashplay.com>",
+  "bugs": {
+    "url": "https://github.com/thrashplay/shift/issues"
+  },
+  "config": {
+    "forge": ".electron/forge.config.js"
+  },
+  "homepage": "https://github.com/thrashplay/shift#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrashplay/shift.git"
+  }
+}
