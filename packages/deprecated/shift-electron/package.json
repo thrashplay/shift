@@ -1,0 +1,60 @@
+{
+  "name": "shift-chronicle",
+  "version": "0.0.1",
+  "description": "'Chronicle' iteration of the Shift project. A Thrashplay game.",
+  "license": "ISC",
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "build": "vite build .",
+    "clean": "rm -rf lib out tsconfig.tsbuildinfo .webpack",
+    "debug": "electron-forge start --vscode -- --remote-debugging-port=9223",
+    "make": "electron-forge make",
+    "package": "electron-forge package",
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "vite build . --watch"
+  },
+  "dependencies": {
+    "@thrashplay/shift-core": "*",
+    "electron-squirrel-startup": "^1.0.0",
+    "fontfaceobserver": "^2.3.0",
+    "lodash": "^4.17.21",
+    "pixi.js": "^6.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
+    "@electron-forge/plugin-webpack": "^6.0.0-beta.64",
+    "@types/fontfaceobserver": "^2.1.0",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/webpack-env": "^1.17.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.0",
+    "css-loader": "^6.0.0",
+    "electron": "^19.0.8",
+    "fork-ts-checker-webpack-plugin": "^7.2.1",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.0.0",
+    "tsconfig-paths-webpack-plugin": "3.5.2",
+    "ts-loader": "^9.2.2"
+  },
+  "author": "Sean Kleinjung <sean@thrashplay.com>",
+  "bugs": {
+    "url": "https://github.com/thrashplay/shift/issues"
+  },
+  "config": {
+    "forge": ".electron/forge.config.js"
+  },
+  "homepage": "https://github.com/thrashplay/shift#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrashplay/shift.git"
+  }
+}

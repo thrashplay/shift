@@ -1,15 +1,16 @@
-
 {
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": ".",
+    "composite": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,
@@ -17,16 +18,23 @@
     "noImplicitReturns": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "outDir": "lib",
     "paths": {
-      "*": ["node_modules/*"]
+      "@thrashplay/paragon": ["./packages/paragon/core/src"],
+      "@thrashplay/paragon-*": ["./packages/paragon/*/src"],
+      "@thrashplay/shift-*": ["./packages/shift/*/src"]
     },
     "pretty": true,
     "resolveJsonModule": true,
-    "rootDir": "src",
-    "sourceMap": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
     "strict": true,
-    "target": "ES2022"
+    "target": "ES2022",
+    "types": [
+      "node",
+      "offscreencanvas",
+      "vite/client"
+    ],
+    "useDefineForClassFields": true
   },
-  "include": ["src/**/*"]
+  "include": ["./packages/**/src"]
 }
