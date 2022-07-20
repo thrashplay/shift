@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@thrashplay/paragon",
+  "version": "0.0.1",
+  "description": "Thrashplay's 'Paragon' engine.",
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pino": "^8.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/uuid": "^8.3.4",
+    "@types/webpack-env": "^1.17.0"
+  },
+  "author": "Sean Kleinjung <sean@thrashplay.com>",
+  "bugs": {
+    "url": "https://github.com/thrashplay/shift/issues"
+  },
+  "homepage": "https://github.com/thrashplay/shift#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrashplay/shift.git"
+  }
+}
